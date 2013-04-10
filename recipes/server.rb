@@ -12,6 +12,7 @@ if platform_family?(%w{debian})
     pinba_install "pinba-server" do
       tmp_dir "/tmp/pinba"
       download_url node['pinba']['server']['src_data']
+      plugin_mysql_path node['pinba']['server']['plugin_mysql_path']
     end
 
   else

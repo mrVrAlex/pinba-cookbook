@@ -6,6 +6,7 @@ actions :run
 #Installation attributes
 attribute :download_url, :kind_of => String
 attribute :tmp_dir, :kind_of => String, :default => Chef::Config[:file_cache_path]
+attribute :plugin_mysql_path, :kind_of => String
 
 def initialize(name, run_context=nil)
   super
